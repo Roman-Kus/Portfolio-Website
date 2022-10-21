@@ -1,0 +1,93 @@
+#Skills-page {
+  height: 1200px;
+}
+
+#languages-section, #tools-section {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+#Languages-title, #tools-title {
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+#mastery {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.language-info, .language-section {
+  display: flex;
+}
+
+.language-info {
+  flex-direction: column;
+}
+
+.language-section {
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.Image-and-text {
+  display: flex;
+}
+
+.language-images {
+  margin-right: 15px;
+  float: left; 
+  width: 55px; 
+  object-fit: cover; 
+}
+
+.CSS-image {
+  padding: 0px 7px;
+}
+
+.language-text {  
+  position: absolute;
+  top: 0;
+  display: inline-block;
+}
+
+.duration {
+  font-size: 0.8rem;
+  margin-left: 5px;
+  font: gray;
+  opacity: 0.7;
+}
+
+.mastery-line {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  background-color: black;
+  border-color: black;
+  width: 20%;
+}
+
+.mastery-HTML, .mastery-CSS, .mastery-Github {
+  width: 50%;
+}
+
+.mastery-C {
+  width: 30%;
+}
+
+#tools-section {
+  top: 800px;
+}
+
+.Github-image {
+  padding: 0px 7px;
+}
+
+.mastery-Notion {
+  width: 30%;
+}
