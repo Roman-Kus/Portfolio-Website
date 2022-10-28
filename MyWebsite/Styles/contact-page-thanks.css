@@ -1,0 +1,38 @@
+body {
+  padding: 50px;
+  background-color: #1d1d1d;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  max-width: 700px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #1d1d1d;
+}
+
+#Thank-You {
+  margin: 0;
+}
+
+#HomePage {
+  color: #49c5b6;
+}
+
+#HomePage:hover {
+  color: #77ffef;
+}
+
+@media (min-width: 576px) {
+  main {
+    font-size: 2rem;
+  }
+}
