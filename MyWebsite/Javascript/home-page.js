@@ -1,4 +1,5 @@
-let screenHeight = window.clientHeight;
+let screenWidth = screen.width;
+let screenHeight = screen.height;
 
 if(screenHeight <= 700){
   document.getElementById("Home-Page").style.height = screenHeight + 'px';
