@@ -12,7 +12,7 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.style.left = "0px";
   navMenu.style.transition = "0.5s ease-in-out";
-  letName.style.marginLeft = (navLength - 78) + 'px';
+  letName.style.marginLeft = (navLength - 52) + 'px';
   letName.style.transition = "0.5s ease-in-out";
 
   navLinks.forEach((link, index) => {
