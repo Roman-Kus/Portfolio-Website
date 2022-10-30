@@ -48,6 +48,7 @@ a {
 }
 
 .nav-link {
+  margin-bottom: 10%;
   transition: 0.7 ease;
 }
 
