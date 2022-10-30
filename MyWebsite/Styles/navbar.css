@@ -81,25 +81,6 @@ a {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-#Navbar-Social-Medias {
-  align-self: center;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-}
-
-.navbar-medias {
-  margin-right: 25px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.nav-email, .nav-GitHub, .nav-LinkedIn, .nav-Twitter {
-  width: 45px;
-  transition: width 0.15s;
-}
-
 .nav-menu.active {
   left: 0;
 }
@@ -107,7 +88,6 @@ a {
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    font-size: 0rem;
   }
   to {
     opacity: 1;
