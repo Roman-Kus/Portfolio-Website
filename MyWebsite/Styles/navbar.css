@@ -1,0 +1,181 @@
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1f1f;
+  z-index: 10;
+  position: fixed;
+  border-bottom: 3px solid #fff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+}
+
+#Name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 7px;
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 84px;
+  height: 90vh;
+  padding: 40px 0;
+  gap: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f1f1f;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.nav-menu li {
+  opacity: 0;
+}
+
+.nav-link {
+  transition: 0.7 ease;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.hamburger {
+  margin-right: 25px;
+  display: block;
+}
+
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+#Navbar-Social-Medias {
+  align-self: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.navbar-medias {
+  margin-right: 25px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.nav-email, .nav-GitHub, .nav-LinkedIn, .nav-Twitter {
+  width: 45px;
+  transition: width 0.15s;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes navLinkFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    padding-left: 4%;
+  }
+
+  a {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+
+  #Name {
+    flex-basis: 70%;
+  }
+
+  .nav-menu {
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 30%;
+    height: 70px;
+    padding-right: 0px;
+    margin-right: 10%;
+    gap: 30px;
+  }
+
+  .nav-menu li {
+    opacity: 1;
+  }
+
+  .nav-item {
+    margin-top: 15px;
+    padding-bottom: 0.75rem;
+    position: relative;
+    font-size: 16px;
+  }
+  
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    width: 0;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #49c5b6;
+    transition: width 0.15s ease-out;
+  }
+  
+  .nav-link:hover::before {
+    width: 95%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

@@ -1,0 +1,22 @@
+#About-Me-Page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#About-Me-Title {
+  font-family: 'Bebas Neue', sans-serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+#About-Me-Description {
+  align-self: center;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  line-height: 35px;
+  max-width: 700px;
+  text-align: center;
+}
